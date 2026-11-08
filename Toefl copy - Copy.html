@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOEFL Listening Practice Test | BestMyTest</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+tailwind.config={theme:{extend:{fontFamily:{rubik:['Rubik','sans-serif']},colors:{navy:'#123E50',teal:'#287D96',aqua:'#42C2D3',gold:'#F6C45B'}}}}
+</script>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Rubik,sans-serif;color:#173746;background:#e9eef0}
+.navbar-logo{transform:scale(1.3);transform-origin:left center}
+.hero{position:relative;isolation:isolate;overflow:hidden;background-color:#075a70;background-image:linear-gradient(90deg,rgba(3,30,42,.94) 0%,rgba(4,45,58,.82) 48%,rgba(7,90,112,.28) 100%),linear-gradient(rgba(7,90,112,.24),rgba(7,90,112,.24)),url("hero-5.png");background-position:right top;background-size:100% auto;background-repeat:no-repeat}
+.hero:before{content:"";position:absolute;z-index:-1;width:780px;height:780px;right:-330px;top:-450px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 65px rgba(255,255,255,.035),0 0 0 130px rgba(255,255,255,.025)}
+.hero:after{content:"";position:absolute;z-index:-1;width:900px;height:400px;right:-170px;bottom:-290px;border:1px solid rgba(255,255,255,.12);border-radius:50%;transform:rotate(-18deg)}
+.hero-overview{border-top:1px solid rgba(255,255,255,.22)}
+.hero-stat+.hero-stat{border-left:1px solid rgba(255,255,255,.22)}
+.card{border:1px solid #e3edf1;background:#fff;box-shadow:0 8px 24px rgba(25,70,88,.045)}
+.library-panel{border:1px solid #dce7ec;background:#fff}
+.reference-card{display:grid!important;grid-template-columns:52px minmax(0,1fr) auto!important;align-items:center!important;gap:0 12px!important;padding:10px 12px!important;border:1px solid #dce7ec!important;border-radius:10px!important;background:#fff!important;box-shadow:none!important;transition:border-color .18s ease,background .18s ease}
+.reference-card:hover{border-color:#9fc4d1!important;background:#f8fbfc!important}
+.reference-card>div:first-child{grid-column:1;grid-row:1 / span 2;display:block!important}
+.reference-card>div:first-child>span:nth-child(2){display:none}
+.reference-card h3{grid-column:2;grid-row:1;margin:0!important;font-size:12px!important}
+.reference-card p{grid-column:2;grid-row:2;margin:2px 0 0!important;font-size:10px!important}
+.reference-card button{grid-column:3;grid-row:1 / span 2;width:auto!important;margin:0!important;padding:8px 13px!important;border-radius:999px!important;background:#438ea8!important;transition:background .18s ease}
+.reference-card button:hover{background:#286e88!important}
+.stage-card{border:1px solid #e1e9ed;background:#fff;box-shadow:0 1px 3px rgba(20,65,82,.04)}.stage-bar{display:flex;height:7px;gap:3px;overflow:hidden;border-radius:999px}.stage-bar span{height:100%;border-radius:999px}
+@media(max-width:767px){.hero{background-position:center top;background-size:100% auto}.hero-stat+.hero-stat{border-left:0}.reference-card{grid-template-columns:44px minmax(0,1fr) auto!important;gap:0 9px!important;padding:9px!important}.reference-card button{padding:7px 10px!important;font-size:9px!important}}
+body{color:#e8f4ff;background:#0b3152}
+body>header{background:#123e5a!important;color:#eff8ff}
+body>header nav a{color:#d5e7f5}
+body>header nav a:hover{color:#fff}
+body>header summary{border-color:#52738b;color:#e3eff8}
+body>header .rounded-full.bg-\[\#438EA8\]{background:#287d96}
+body>header .border-slate-200{border-color:#315873}
+body>header .text-slate-500,body>header .text-slate-600{color:#c1d5e5}
+body>header .bg-white{background:#123e5a}
+body>header details nav{border-color:#315873;background:#16466b}
+main>section:not(.hero){background-color:#104268}
+main>section:not(.hero)+section:not(.hero){background-color:#0b365b}
+main>section:not(.hero) .text-slate-800,main>section:not(.hero) .text-slate-700{color:#eff8ff}
+main>section:not(.hero) .text-slate-600{color:#d1e4f3}
+main>section:not(.hero) .text-slate-500{color:#b6cee1}
+main>section:not(.hero) .text-slate-400{color:#9bbbd4}
+main>section:not(.hero) .border-slate-200{border-color:#2b5b7d}
+main>section:not(.hero) .border-slate-100{border-color:#315f81}
+.library-panel{border-color:#2b5b7d;background:#123e64}
+.library-panel>div:first-child,.library-panel>#test-grid{background:#16466b}
+.library-panel>div:first-child>span:last-child{background:#287d96}
+.reference-card{border-color:#2d6388!important;background:#1a5078!important}
+.reference-card:hover{border-color:#61a1ca!important;background:#205e87!important}
+.reference-card h3{color:#eff8ff!important}
+.reference-card p{color:#c0d8eb!important}
+.reference-card button{background:#287d96!important}
+.reference-card button:hover{background:#1d6582!important}
+.stage-card{border-color:#2d6388;background:#1a5078}
+main>section:not(.hero) .bg-\[\#f8fafb\]{background:#16466b}
+main>section:not(.hero) .bg-\[\#eaf4f7\],main>section:not(.hero) .bg-\[\#e6f0f3\]{background:#205a80}
+main>section:not(.hero) .bg-\[\#dfeff4\],main>section:not(.hero) .bg-\[\#e8f3f7\]{background:#28658a}
+main>section:not(.hero) .text-\[\#438EA8\],main>section:not(.hero) .text-\[\#287D96\]{color:#a7d9f3}
+main>section:not(.hero) .border-\[\#e1e9ed\]{border-color:#2d6388}
+main>footer{border-color:#315873!important;background:#123e5a!important}
+main>footer .border-slate-200{border-color:#315873}
+main>footer .text-slate-800{color:#eff8ff}
+main>footer .text-slate-500{color:#c1d5e5}
+main>footer .text-slate-400{color:#9bb8cf}
+main>footer a:hover{color:#8ed8ee}
+</style>
+</head>
+<body id="top">
+
+<!-- SITE HEADER: context around the hero, not part of the requested banner -->
+<header class="relative z-30 bg-white">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 lg:px-10">
+    <a href="#top" class="flex shrink-0 items-center" aria-label="Back to top">
+      <img src="logo-png.png" alt="BestMyTest" class="navbar-logo h-10 w-auto object-contain">
+    </a>
+    <nav class="hidden items-center gap-7 text-[12px] font-semibold text-slate-500 lg:flex">
+      <a class="text-sky-600 hover:underline" href="https://www.bestmytest.com/toefl">TOEFL</a>
+      <a class="hover:text-sky-600" href="https://www.bestmytest.com/ielts">IELTS</a>
+      <a class="hover:text-sky-600" href="https://www.bestmytest.com/toeic">TOEIC</a>
+      <a class="hover:text-sky-600" href="https://www.bestmytest.com/gmat">GMAT</a>
+      <a class="hover:text-sky-600" href="https://www.bestmylingo.com/lingo/daily-english">BestMyLingo</a>
+    </nav>
+    <div class="hidden items-center gap-5 lg:flex">
+      <a href="https://www.bestmytest.com/toefl/welcome" class="text-[11px] font-semibold text-slate-500 hover:text-sky-700">PREP COURSES</a>
+      <a href="https://www.bestmytest.com/about-us" class="text-[11px] font-semibold text-slate-500 hover:text-sky-700">ABOUT US</a>
+      <a href="https://www.bestmytest.com/blog/toefl" class="text-[11px] font-semibold text-slate-500 hover:text-sky-700">TOEFL GUIDES</a>
+      <a href="https://www.bestmytest.com/app/user/login" class="rounded-full bg-[#438EA8] px-5 py-2.5 text-[10px] font-bold tracking-wide text-white shadow-sm hover:bg-[#286e88]">LOG IN</a>
+    </div>
+    <details class="relative lg:hidden">
+      <summary aria-label="Open navigation menu" class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-lg border border-slate-200 text-slate-600 [&::-webkit-details-marker]:hidden">
+        <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </summary>
+      <nav class="absolute right-0 top-full z-40 mt-2 grid min-w-56 gap-1 rounded-xl border border-slate-200 bg-white p-3 text-sm font-semibold shadow-xl">
+        <a href="https://www.bestmytest.com/toefl" class="rounded-lg px-3 py-2 text-sky-700 hover:bg-sky-50">TOEFL</a>
+        <a href="https://www.bestmytest.com/ielts" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">IELTS</a>
+        <a href="https://www.bestmytest.com/toeic" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">TOEIC</a>
+        <a href="https://www.bestmytest.com/gmat" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">GMAT</a>
+        <a href="https://www.bestmylingo.com/lingo/daily-english" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">BestMyLingo</a>
+        <a href="https://www.bestmytest.com/toefl/welcome" class="mt-1 rounded-lg border-t border-slate-100 px-3 py-2 pt-3 text-slate-600 hover:bg-sky-50 hover:text-sky-700">PREP COURSES</a>
+        <a href="https://www.bestmytest.com/about-us" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">ABOUT US</a>
+        <a href="https://www.bestmytest.com/blog/toefl" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">TOEFL GUIDES</a>
+        <a href="https://www.bestmytest.com/app/user/login" class="rounded-lg px-3 py-2 text-slate-600 hover:bg-sky-50 hover:text-sky-700">LOG IN</a>
+      </nav>
+    </details>
+  </div>
+</header>
+
+<main>
+<!-- PRIMARY DESIGN AREA: LISTENING HERO -->
+<section class="hero text-white">
+ <div class="relative z-10 mx-auto max-w-7xl px-5 pb-9 pt-7 sm:px-8 sm:pb-12 sm:pt-9 lg:px-10 lg:pb-11">
+  <nav aria-label="Breadcrumb" class="relative z-10 mb-5 flex flex-wrap items-center gap-2 text-xs text-white/70 sm:text-sm">
+   <a href="https://www.bestmytest.com/toefl" class="hover:text-white">TOEFL Preparation</a><span class="text-white/35">›</span>
+   <span class="font-medium text-white">Listening Practice Test</span>
+  </nav>
+  <div class="relative z-10 mb-7 flex items-center gap-2 text-xs text-white/70 sm:text-sm">
+   <svg class="h-4 w-4 text-cyan-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+   <span>By <strong class="font-semibold text-white">Lesley-ann Green</strong>, updated October 15th, 2026</span>
+  </div>
+
+  <div class="grid items-center gap-3 md:grid-cols-12 lg:gap-0">
+   <div class="relative z-10 md:col-span-8 lg:pr-4">
+     <h1 class="max-w-4xl text-[34px] font-bold leading-[1.12] tracking-[-.035em] sm:text-5xl lg:text-[55px]">
+      TOEFL Listening Practice Test: <span class="text-cyan-100">Over 400 Questions &amp; Sample Exercises</span>
+     </h1>
+     <p class="mt-5 max-w-3xl text-sm leading-7 text-white/82 sm:text-base sm:leading-7">
+      Free TOEFL listening practice test with instant score and feedback. 50 full-length adaptive listening tests with answers, transcripts, and detailed explanations.
+     </p>
+    </div>
+
+   <div class="relative mx-auto flex min-h-[140px] w-full max-w-[390px] items-center justify-center md:col-span-4 md:min-h-[150px] md:self-end">
+    <div class="absolute bottom-0 right-0 z-20 translate-y-2 rounded-2xl border border-white/20 bg-[#073e52]/90 px-4 py-3 shadow-xl backdrop-blur-lg sm:bottom-2 sm:right-0">
+     <div class="flex items-center gap-3">
+      <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-300/15 text-cyan-100">
+       <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10v4m4-8v12m4-16v20m4-13v6m4-10v14m4-9v4"/></svg>
+      </span>
+      <span><b class="block text-sm">Listen. Practice. Improve.</b><small class="text-[10px] text-white/60">Your next score starts here</small></span>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <!-- Overview panel -->
+  <div id="overview" class="hero-overview relative z-10 mt-8 scroll-mt-6 pt-5 sm:mt-9">
+   <h2 class="mb-4 flex items-center gap-2 text-xs font-semibold tracking-wide text-white/80 sm:text-sm">
+    <img src="https://dcstatic.com/images/icons/call-out/call-out-info-d26eeb51f3.svg" alt="" class="h-4 w-4 opacity-80">
+    Listening test at a glance
+   </h2>
+    <div class="grid grid-cols-2 gap-y-4 sm:grid-cols-3 lg:grid-cols-5 lg:gap-0">
+     <div class="hero-stat py-1 lg:px-3"><b class="text-2xl font-semibold sm:text-3xl">50</b><p class="mt-1 text-xs leading-4 text-white/70">Listening tests</p></div>
+     <div class="hero-stat py-1 lg:px-3"><b class="text-2xl font-semibold sm:text-3xl">52</b><p class="mt-1 text-xs leading-4 text-white/70">Questions each</p></div>
+     <div class="hero-stat py-1 lg:px-3"><b class="text-2xl font-semibold sm:text-3xl">29</b><p class="mt-1 text-xs leading-4 text-white/70">Minutes</p></div>
+     <div class="hero-stat py-1 lg:px-3"><b class="text-2xl font-semibold sm:text-3xl">2</b><p class="mt-1 text-xs leading-4 text-white/70">Adaptive stages</p></div>
+     <div class="hero-stat col-span-2 py-1 sm:col-span-1 lg:px-3"><b class="text-2xl font-semibold text-cyan-100 sm:text-3xl">1–6</b><p class="mt-1 text-xs leading-4 text-white/70">Band score</p></div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!-- SECTION BELOW THE HERO -->
+<section class="bg-[#f3f7f8]">
+ <div class="mx-auto max-w-6xl px-5 pb-12 pt-9 sm:px-8 sm:pt-11 lg:px-10 lg:pb-16">
+  <div class="mb-6">
+   <p class="mb-2 text-[10px] font-bold uppercase tracking-[.16em] text-[#438ea8]">Practice library</p>
+   <h2 class="text-lg font-bold tracking-tight text-slate-800 sm:text-xl">TOEFL Listening Practice Tests 1–50</h2>
+   <p class="mt-3 max-w-5xl text-[13px] leading-6 text-slate-600">
+    Each of our <strong class="font-semibold text-slate-700">50 TOEFL Listening practice tests</strong> is a full-length listening section: <strong class="font-semibold text-slate-700">52 questions in 29 minutes</strong>, with all four task types in two adaptive stages. How you do in stage 1 decides whether you get harder or easier questions in stage 2, just like the official TOEFL iBT listening test. You also get a band score from 1–6. Click start on any test to begin a free TOEFL listening practice exam.
+   </p>
+  </div>
+
+  <div class="library-panel overflow-hidden rounded-xl">
+   <div class="flex items-center justify-between gap-3 border-b border-slate-200 bg-[#f8fafb] px-4 py-3 sm:px-5">
+    <div class="flex min-w-0 items-center gap-3">
+     <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#e6f0f3] text-[#287D96]">
+      <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 13v-2a9 9 0 0 1 18 0v2"/><path d="M3 13h4v7H5a2 2 0 0 1-2-2v-5Zm18 0h-4v7h2a2 2 0 0 0 2-2v-5Z"/></svg>
+     </span>
+     <div class="min-w-0">
+      <h3 class="text-sm font-bold text-slate-800">Adaptive TOEFL Listening Tests</h3>
+      <p class="mt-1 text-[11px] text-slate-500">Full Listening sections with all four task types · 52 questions · 29 min each</p>
+     </div>
+    </div>
+    <span class="shrink-0 rounded-full bg-[#e9423a] px-3 py-1 text-[10px] font-bold text-white">50 tests</span>
+   </div>
+
+   <div id="test-grid" class="grid grid-cols-1 gap-2 bg-[#f8fafb] p-3 sm:grid-cols-2 sm:p-4">
+    <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 1</span>
+          <span class="rounded-full bg-[#dfeff4] px-2 py-0.5 text-[9px] font-bold text-[#287D96]">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 1</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 2</span>
+          <span class="rounded-full bg-[#dfeff4] px-2 py-0.5 text-[9px] font-bold text-[#287D96]">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 2</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 3</span>
+          <span class="rounded-full bg-[#dfeff4] px-2 py-0.5 text-[9px] font-bold text-[#287D96]">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 3</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 4</span>
+          <span class="rounded-full bg-[#e8f3f7] px-2 py-0.5 text-[9px] font-bold text-slate-500">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 4</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 5</span>
+          <span class="rounded-full bg-[#e8f3f7] px-2 py-0.5 text-[9px] font-bold text-slate-500">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 5</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 6</span>
+          <span class="rounded-full bg-[#e8f3f7] px-2 py-0.5 text-[9px] font-bold text-slate-500">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 6</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 7</span>
+          <span class="rounded-full bg-[#e8f3f7] px-2 py-0.5 text-[9px] font-bold text-slate-500">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 7</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 8</span>
+          <span class="rounded-full bg-[#e8f3f7] px-2 py-0.5 text-[9px] font-bold text-slate-500">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 8</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+
+      <article class="reference-card rounded-xl p-3 shadow-sm">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]">Test 9</span>
+          <span class="rounded-full bg-[#e8f3f7] px-2 py-0.5 text-[9px] font-bold text-slate-500">Free</span>
+        </div>
+        <h3 class="mt-2 text-sm font-semibold text-slate-800">Listening Test 9</h3>
+        <p class="mt-1 text-[10px] text-slate-500">52 questions · 29 min</p>
+        <button class="mt-3 w-full rounded-full bg-[#4288a1] py-2 text-[10px] font-bold text-white shadow-sm">Start Test</button>
+      </article>
+    </div>
+  </div>
+
+ </div>
+</section>
+
+<section class="border-t border-slate-200 bg-white">
+ <div class="mx-auto max-w-6xl px-5 py-10 sm:px-8 sm:py-12 lg:px-10 lg:py-14">
+  <div class="mb-7 border-b border-slate-200 pb-5">
+   <p class="mb-2 text-[10px] font-bold uppercase tracking-[.16em] text-[#438ea8]">Test format</p>
+   <h2 class="text-xl font-bold tracking-tight text-slate-800 sm:text-2xl">Know what to expect</h2>
+   <p class="mt-2 max-w-3xl text-[13px] leading-6 text-slate-600">A clear look at the listening tasks, score, and one-time audio playback before you begin.</p>
+  </div>
+
+  <div class="grid gap-3 md:grid-cols-3">
+    <article class="stage-card flex items-start gap-3 rounded-lg p-4">
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#eaf4f7] text-[#438EA8]">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 10v4m4-8v12m4-16v20m4-13v6m4-10v14m4-9v4"/></svg>
+      </span>
+      <div><h3 class="text-base font-bold text-slate-800">4</h3><p class="mt-1 text-[11px] leading-4 text-slate-600">Choose a Response, Conversation, Announcement, Academic Talk</p></div>
+    </article>
+    <article class="stage-card flex items-start gap-3 rounded-lg p-4">
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#eaf4f7] text-[#438EA8]">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v18m-6-4 6 4 6-4M7 7h10M7 11h10"/></svg>
+      </span>
+      <div><h3 class="text-base font-bold text-slate-800">Band 1–6</h3><p class="mt-1 text-[11px] leading-4 text-slate-600">One band score for the Listening section</p></div>
+    </article>
+    <article class="stage-card flex items-start gap-3 rounded-lg p-4">
+      <span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#eaf4f7] text-[#438EA8]">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      </span>
+      <div><h3 class="text-base font-bold text-slate-800">None</h3><p class="mt-1 text-[11px] leading-4 text-slate-600">Each recording plays once, and you can’t go back to a question</p></div>
+    </article>
+  </div>
+
+  <div class="mt-10 border-t border-slate-200 pt-8">
+    <h2 class="text-[20px] font-bold tracking-tight text-slate-800 sm:text-[22px]">The Two Stages of the Adaptive Listening Test</h2>
+    <p class="mt-3 max-w-5xl text-[12px] leading-6 text-slate-600 sm:text-[13px]">
+      In stage 1, the listening questions have about the same difficulty for everyone. If you do well, you’ll get harder questions in stage 2, which can lead to a much higher band score. If you don’t do well, you’ll get normal and easier questions in stage 2. Correct answers to these questions can help your score after a weaker stage 1. Each stage has its own timer, and once stage 2 starts you can’t go back to stage 1.
+    </p>
+
+    <div class="mt-6 rounded-xl border border-[#e1e9ed] bg-[#f8fafb] p-4 sm:p-5">
+      <div class="mb-3 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <span class="rounded-full bg-[#295f74] px-2.5 py-1 text-[10px] font-bold text-white">Stage 1</span>
+          <span class="text-[11px] font-medium text-slate-500">Everyone</span>
+        </div>
+        <span class="rounded-full bg-[#dfeff4] px-2.5 py-1 text-[10px] font-bold text-[#287D96]">32 questions</span>
+      </div>
+
+      <div class="stage-bar mb-3">
+        <span class="w-[38%] bg-[#183f50]"></span><span class="w-[19%] bg-[#287d96]"></span><span class="w-[19%] bg-[#5798b1]"></span><span class="w-[24%] bg-[#a7cdd9]"></span>
+      </div>
+      <div class="space-y-1.5 text-[11px] text-slate-700">
+        <div class="flex items-center justify-between gap-4"><span><i class="mr-2 inline-block h-2 w-2 rounded-full bg-[#183f50]"></i>Listen and Choose a Response</span><span class="text-slate-500">12 lines · 12 questions</span></div>
+        <div class="flex items-center justify-between gap-4"><span><i class="mr-2 inline-block h-2 w-2 rounded-full bg-[#287d96]"></i>Listen to a Conversation</span><span class="text-slate-500">3 conversations · 6 questions</span></div>
+        <div class="flex items-center justify-between gap-4"><span><i class="mr-2 inline-block h-2 w-2 rounded-full bg-[#5798b1]"></i>Listen to an Announcement</span><span class="text-slate-500">3 announcements · 6 questions</span></div>
+        <div class="flex items-center justify-between gap-4"><span><i class="mr-2 inline-block h-2 w-2 rounded-full bg-[#a7cdd9]"></i>Listen to an Academic Talk</span><span class="text-slate-500">2 talks · 8 questions</span></div>
+      </div>
+    </div>
+
+    <div class="mt-3 grid gap-3 md:grid-cols-2">
+      <article class="stage-card rounded-xl p-4">
+        <div class="mb-3 flex items-center justify-between gap-3">
+          <div>
+            <h3 class="text-[16px] font-bold text-slate-800">Harder stage 2</h3>
+            <p class="text-[10px] text-slate-400">If stage 1 goes well</p>
+          </div>
+          <span class="rounded-full bg-[#dfeff4] px-2.5 py-1 text-[10px] font-bold text-[#287D96]">20 questions</span>
+        </div>
+        <div class="stage-bar mb-3">
+          <span class="w-[58%] bg-[#183f50]"></span><span class="w-[12%] bg-[#287d96]"></span><span class="w-[12%] bg-[#5798b1]"></span><span class="w-[18%] bg-[#a7cdd9]"></span>
+        </div>
+        <div class="space-y-1.5 text-[11px] text-slate-700">
+          <div class="flex items-center justify-between gap-3"><span>Listen and Choose a Response</span><span class="text-right text-slate-500">12 lines · 12 questions</span></div>
+          <div class="flex items-center justify-between gap-3"><span>Listen to a Conversation</span><span class="text-right text-slate-500">1 conversation · 2 questions</span></div>
+          <div class="flex items-center justify-between gap-3"><span>Listen to an Announcement</span><span class="text-right text-slate-500">1 announcement · 2 questions</span></div>
+          <div class="flex items-center justify-between gap-3"><span>Listen to an Academic Talk</span><span class="text-right text-slate-500">1 talk · 4 questions</span></div>
+        </div>
+      </article>
+
+      <article class="stage-card rounded-xl p-4">
+        <div class="mb-3 flex items-center justify-between gap-3">
+          <div>
+            <h3 class="text-[16px] font-bold text-slate-800">Easier stage 2</h3>
+            <p class="text-[10px] text-slate-400">Otherwise</p>
+          </div>
+          <span class="rounded-full bg-[#dfeff4] px-2.5 py-1 text-[10px] font-bold text-[#287D96]">20 questions</span>
+        </div>
+        <div class="stage-bar mb-3">
+          <span class="w-[58%] bg-[#183f50]"></span><span class="w-[12%] bg-[#287d96]"></span><span class="w-[12%] bg-[#5798b1]"></span><span class="w-[18%] bg-[#a7cdd9]"></span>
+        </div>
+        <div class="space-y-1.5 text-[11px] text-slate-700">
+          <div class="flex items-center justify-between gap-3"><span>Listen and Choose a Response</span><span class="text-right text-slate-500">12 lines · 12 questions</span></div>
+          <div class="flex items-center justify-between gap-3"><span>Listen to a Conversation</span><span class="text-right text-slate-500">1 conversation · 2 questions</span></div>
+          <div class="flex items-center justify-between gap-3"><span>Listen to an Announcement</span><span class="text-right text-slate-500">1 announcement · 2 questions</span></div>
+          <div class="flex items-center justify-between gap-3"><span>Listen to an Academic Talk</span><span class="text-right text-slate-500">1 talk · 4 questions</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+ </div>
+</section>
+
+<footer class="border-t border-slate-200 bg-white">
+ <div class="mx-auto max-w-7xl px-5 py-10 sm:px-8 lg:px-10">
+  <div class="grid gap-8 border-b border-slate-200 pb-8 sm:grid-cols-2 lg:grid-cols-[1.2fr_1fr_1.4fr_1fr] lg:gap-10">
+   <div>
+    <img src="logo-png.png" alt="BestMyTest" class="h-14 w-auto object-contain">
+    <p class="mt-3 max-w-xs text-xs leading-5 text-slate-500">Prepare with confidence. Practice with purpose.</p>
+   </div>
+
+   <nav aria-label="Social media">
+    <h2 class="text-xs font-bold uppercase tracking-[.12em] text-slate-800">Social Media</h2>
+    <ul class="mt-3 space-y-2 text-xs text-slate-500">
+     <li><a class="hover:text-[#287D96]" href="https://www.facebook.com/bestmytest">Facebook</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.youtube.com/channel/UC1W8uPihtHiLMwkTv503rlA/videos?view_as=subscriber">YouTube</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://plus.google.com/+Toeflnetwork-ZebraEducationInc">Google+</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.linkedin.com/company/bestmytest">LinkedIn</a></li>
+    </ul>
+   </nav>
+
+   <nav aria-label="Resources">
+    <h2 class="text-xs font-bold uppercase tracking-[.12em] text-slate-800">Resources</h2>
+    <ul class="mt-3 space-y-2 text-xs text-slate-500">
+     <li><a class="hover:text-[#287D96]" href="https://www.bestmytest.com/about-us">About us</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.bestmytest.com/ielts/course-reviews">Testimonials</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.bestmytest.com/bestmytest/score-guarantee/ielts">Our Score Guarantee</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.bestmytest.com/ielts/test-centre">Test center</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.bestmytest.com/ielts#!">Start 7 day free trial</a></li>
+    </ul>
+   </nav>
+
+   <nav aria-label="Connect">
+    <h2 class="text-xs font-bold uppercase tracking-[.12em] text-slate-800">Connect</h2>
+    <ul class="mt-3 space-y-2 text-xs text-slate-500">
+     <li><a class="hover:text-[#287D96]" href="mailto:info@bestmytest.com">info@bestmytest.com</a></li>
+     <li><a class="hover:text-[#287D96]" href="https://www.bestmytest.com/educator/info">Educator Program</a></li>
+     <li><a class="hover:text-[#287D96]" href="http://www.shareasale.com/shareasale.cfm?merchantID=63451">Become an Affiliate</a></li>
+    </ul>
+   </nav>
+  </div>
+  <p class="pt-5 text-[10px] text-slate-400">&copy; BestMyTest. Prepare with confidence.</p>
+ </div>
+</footer>
+</main>
+<script>
+  const testGrid = document.getElementById("test-grid");
+  if (!testGrid) {
+    throw new Error('Could not find the TOEFL listening test list (#test-grid).');
+  }
+
+  for (let testNumber = 10; testNumber <= 50; testNumber += 1) {
+    const card = document.createElement("article");
+    card.className = "reference-card rounded-xl p-3 shadow-sm";
+
+    const label = document.createElement("div");
+    label.className = "flex items-center justify-between gap-2";
+
+    const number = document.createElement("span");
+    number.className = "text-[10px] font-bold uppercase tracking-[.12em] text-[#438EA8]";
+    number.textContent = `Test ${testNumber}`;
+    label.appendChild(number);
+
+    const title = document.createElement("h3");
+    title.className = "mt-2 text-sm font-semibold text-slate-800";
+    title.textContent = `Listening Test ${testNumber}`;
+
+    const details = document.createElement("p");
+    details.className = "mt-1 text-[10px] text-slate-500";
+    details.textContent = "52 questions · 29 min";
+
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "test-start mt-3 w-full rounded-full py-2 text-[10px] font-bold text-white shadow-sm";
+    button.setAttribute("aria-label", `Start Listening Test ${testNumber}`);
+    button.textContent = "Start Test";
+
+    card.append(label, title, details, button);
+    testGrid.appendChild(card);
+  }
+</script>
+</body>
+</html>
